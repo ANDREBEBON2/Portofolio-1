@@ -85,28 +85,34 @@ export default function Home() {
                   </a>
                 </div>
                 <div className={`transition-all duration-1400 transform ${homeInvisible ? '-translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}`}>
-                  <Image
-                    src={"/SVG/LinkIn.svg"}
-                    alt="github"
-                    height={50}
-                    width={50}
-                  />
+                  <a href="">
+                    <Image
+                      src={"/SVG/LinkIn.svg"}
+                      alt="github"
+                      height={50}
+                      width={50}
+                    />
+                  </a>
                 </div>
                 <div className={`transition-all duration-1500 transform ${homeInvisible ? '-translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}`}>
-                  <Image
-                    src={"/SVG/IG.svg"}
-                    alt="github"
-                    height={50}
-                    width={50}
-                  />
+                  <a href="https://www.instagram.com/aryanto_892/profilecard/?igsh=dzVubHFoMXZvenp6" target="_blank">
+                    <Image
+                      src={"/SVG/IG.svg"}
+                      alt="github"
+                      height={50}
+                      width={50}
+                    />
+                  </a>
                 </div>
                 <div className={`transition-all duration-1600 transform ${homeInvisible ? '-translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}`}>
-                  <Image
-                    src={"/SVG/FB.svg"}
-                    alt="github"
-                    height={50}
-                    width={50}
-                  />
+                  <a href="https://www.facebook.com/andre.bebon.7" target="_blank">
+                    <Image
+                      src={"/SVG/FB.svg"}
+                      alt="github"
+                      height={50}
+                      width={50}
+                    />
+                  </a>
                 </div>
               </div>
               {/* END MD TO LG */}
@@ -114,42 +120,49 @@ export default function Home() {
               {/* MAX MD */}
               <div className={`flex gap-3.5 md:hidden`}>
                 <div className={`transition-all duration-1300 transform ${homeInvisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}>
-                  <Image
-                    src={"/SVG/Github-bulat.svg"}
-                    alt="github"
-                    height={40}
-                    width={40}
-                  />
+                  <a href="https://github.com/ANDREBEBON2" target="_blank">
+                    <Image
+                      src={"/SVG/Github-bulat.svg"}
+                      alt="github"
+                      height={40}
+                      width={40}
+                    />
+                  </a>
                 </div>
                 <div className={`transition-all duration-1400 transform ${homeInvisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}>
-                  <Image
-                    src={"/SVG/LinkIn.svg"}
-                    alt="github"
-                    height={40}
-                    width={40}
-                  />
+                  <a href="">
+                    <Image
+                      src={"/SVG/LinkIn.svg"}
+                      alt="github"
+                      height={40}
+                      width={40}
+                    />
+                  </a>
                 </div>
                 <div className={`transition-all duration-1500 transform ${homeInvisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}>
-                  <Image
-                    src={"/SVG/IG.svg"}
-                    alt="github"
-                    height={40}
-                    width={40}
-                  />
+                  <a href="https://www.instagram.com/aryanto_892/profilecard/?igsh=dzVubHFoMXZvenp6" target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src={"/SVG/IG.svg"}
+                      alt="github"
+                      height={40}
+                      width={40}
+                    /></a>
                 </div>
                 <div className={`transition-all duration-1600 transform ${homeInvisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}>
-                  <Image
-                    src={"/SVG/FB.svg"}
-                    alt="github"
-                    height={40}
-                    width={40}
-                  />
+                  <a href="https://www.facebook.com/andre.bebon.7" target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src={"/SVG/FB.svg"}
+                      alt="github"
+                      height={40}
+                      width={40}
+                    />
+                  </a>
                 </div>
               </div>
               {/* END MAX MD */}
 
               <div className={`transition-all duration-1700 transform ${homeInvisible ? 'max-md:scale-100 md:-translate-x-0 opacity-100' : 'max-md:scale-0 md:-translate-x-20 opacity-0'}`}>
-                <a href="#" className="">
+                <a href="https://drive.google.com/file/d/13zxq_ckSLGdhqLV0QXeEiPpqBL1uq4H-/view?usp=sharing" target="_blank" className="">
                   <h5 className="py-2.5 font-semibold text-accent">Download CV</h5>
                 </a>
               </div>
@@ -555,44 +568,53 @@ export default function Home() {
             <div className="flex justify-center items-center flex-col gap-2">
               <div className="flex justify-center items-center gap-5">
                 <div className="max-md:h-7 max-md:w-7 group">
-                  <Image
-                    src={"/SVG/IG.svg"}
-                    alt="LinkedIn"
-                    height={40}
-                    width={40}
-                    className="group-hover:scale-110 transition-all duration-300"
-                  />
+                  <a href="https://www.instagram.com/aryanto_892/profilecard/?igsh=dzVubHFoMXZvenp6" target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src={"/SVG/IG.svg"}
+                      alt="LinkedIn"
+                      height={40}
+                      width={40}
+                      className="group-hover:scale-110 transition-all duration-300"
+                    />
+                  </a>
                 </div>
                 <div className="max-md:h-7 max-md:w-7 group">
-                  <Image
-                    src={"/SVG/FB.svg"}
-                    alt="LinkedIn"
-                    height={40}
-                    width={40}
-                    className="group-hover:scale-110 transition-all duration-300"
-                  />
+                  <a href="https://www.facebook.com/andre.bebon.7" target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src={"/SVG/FB.svg"}
+                      alt="LinkedIn"
+                      height={40}
+                      width={40}
+                      className="group-hover:scale-110 transition-all duration-300"
+                    /></a>
                 </div>
                 <div className="max-md:h-7 max-md:w-7 group">
-                  <Image
-                    src={"/SVG/WA.svg"}
-                    alt="LinkedIn"
-                    height={40}
-                    width={40}
-                    className="group-hover:scale-110 transition-all duration-300"
-                  />
+                  <a href="https://wa.me/6282328606977" target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src={"/SVG/WA.svg"}
+                      alt="LinkedIn"
+                      height={40}
+                      width={40}
+                      className="group-hover:scale-110 transition-all duration-300"
+                    />
+                  </a>
                 </div>
                 <div className="max-md:h-7 max-md:w-7 group">
-                  <Image
-                    src={"/SVG/MAIL.svg"}
-                    alt="LinkedIn"
-                    height={40}
-                    width={40}
-                    className="group-hover:scale-110 transition-all duration-300"
-                  />
+                  <a href="mailto:andrebebon21@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src={"/SVG/MAIL.svg"}
+                      alt="LinkedIn"
+                      height={40}
+                      width={40}
+                      className="group-hover:scale-110 transition-all duration-300"
+                    /></a>
                 </div>
               </div>
-              <div>
-                <h1 className="max-md:text-sm font-semibold italic text-primary">Contact Me</h1>
+              {/* <div>
+                <h1 className="max-md:text-sm font-semibold italic text-primary text-center">Contact Me</h1>
+              </div> */}
+              <div className="py-1">
+                <p className="text-center max-sm:text-sm">&copy; 2025 ABportofolio. All rights reserved.</p>
               </div>
             </div>
 

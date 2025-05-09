@@ -1,13 +1,17 @@
-
+import { useRouter } from "next/router";
 import Navbar from "../Navbar"
 type AppShellProps = {
     children: React.ReactNode;
 }
-export default function index(props: AppShellProps) {
+const hiddenNavbar = ["/src/pages/404"];
+
+export default function Index(props: AppShellProps) {
     const { children } = props;
+    const { pathname } = useRouter();
+
     return (
         <div>
-            <Navbar />
+            {hiddenNavbar.includes(pathname) && <Navbar />}
             {children}
         </div>
     )
