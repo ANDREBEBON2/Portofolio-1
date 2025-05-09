@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import AOS from 'aos';
 import { gsap } from "gsap";
+import Head from "next/head";
 
 export default function Home() {
   const container = "container mx-auto px-3 sm:px-5 md:px-7 lg:px-10";
@@ -32,7 +33,6 @@ export default function Home() {
       img.dataset.aosDuration = '1000';
       img.dataset.aosDelay = `${i * 50}`;
     });
-
     (SMdeskripsi as NodeListOf<HTMLImageElement>).forEach((sm, a) => {
       sm.dataset.aos = 'fade-up';
       sm.dataset.aosDuration = `400`;
@@ -56,6 +56,9 @@ export default function Home() {
 
   return (
     <div>
+      <Head>
+        <title>AB Portofolio</title>
+      </Head>
       {/* Home */}
       <section id="Home"
         ref={homeRef}

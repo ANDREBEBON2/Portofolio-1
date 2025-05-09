@@ -3,23 +3,23 @@ import Image from 'next/image';
 export default function Index() {
     const [isOpen, setIsOpen] = useState(false);
     const [isScroll, setIsScroll] = useState(false);
-    // const [activeSection, setActiveSection] = useState('');
+    const [activeSection, setActiveSection] = useState('');
 
-    // useEffect(() => {
-    //     const handleHashChange = () => {
-    //         setActiveSection(window.location.hash);
-    //     };
+    useEffect(() => {
+        const handleHashChange = () => {
+            setActiveSection(window.location.hash);
+        };
 
-    //     // Cek saat pertama render
-    //     handleHashChange();
+        // Cek saat pertama render
+        handleHashChange();
 
-    //     // Dengarkan perubahan hash
-    //     window.addEventListener('hashchange', handleHashChange);
+        // Dengarkan perubahan hash
+        window.addEventListener('hashchange', handleHashChange);
 
-    //     return () => {
-    //         window.removeEventListener('hashchange', handleHashChange);
-    //     };
-    // }, []);
+        return () => {
+            window.removeEventListener('hashchange', handleHashChange);
+        };
+    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -49,10 +49,13 @@ export default function Index() {
                             </button>
                         </div>
                         <div className={`${isOpen ? 'block' : 'max-md:hidden'} max-md:py-7 flex gap-10 flex-col overflow-hidden md:max-h-full md:flex-row`}>
-                            <a onClick={() => setIsOpen(false)} href="#Home" className='uppercase block font-extrabold text-primary'>Home</a>
-                            <a onClick={() => setIsOpen(false)} href="#About" className='uppercase block font-semibold hover:text-primary'>About</a>
-                            <a onClick={() => setIsOpen(false)} href="#Portofolio" className='uppercase block font-semibold hover:text-primary'>Portofolio</a>
-                            <a onClick={() => setIsOpen(false)} href="#Contact" className='uppercase block font-semibold hover:text-primary'>Contact</a>
+                            <a onClick={() => setIsOpen(false)} href="#Home" className={`uppercase block ${activeSection === "#Home" ? 'text-primary font-extrabold max-sm:underline' : 'text-white font-bold'}`}>Home</a>
+
+                            <a onClick={() => setIsOpen(false)} href="#About" className={`uppercase block hover:text-primary ${activeSection === "#About" ? 'text-primary font-extrabold max-sm:underline' : 'text-white font-bold'}`}>About</a>
+
+                            <a onClick={() => setIsOpen(false)} href="#Portofolio" className={`uppercase block hover:text-primary ${activeSection === "#Portofolio" ? 'text-primary font-extrabold max-sm:underline' : 'text-white font-bold'}`}>Portofolio</a>
+
+                            <a onClick={() => setIsOpen(false)} href="#Contact" className={`uppercase block hover:text-primary ${activeSection === "#Contact" ? 'text-primary font-extrabold max-sm:underline' : 'text-white font-bold'}`}>Contact</a>
                         </div>
                     </div>
                 </div>
