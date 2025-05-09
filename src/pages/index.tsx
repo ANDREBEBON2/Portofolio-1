@@ -33,6 +33,7 @@ export default function Home() {
       img.dataset.aosDuration = '1000';
       img.dataset.aosDelay = `${i * 50}`;
     });
+
     (SMdeskripsi as NodeListOf<HTMLImageElement>).forEach((sm, a) => {
       sm.dataset.aos = 'fade-up';
       sm.dataset.aosDuration = `400`;
@@ -561,7 +562,7 @@ export default function Home() {
             <div className="flex justify-center items-center mb-6">
               <div className="md:h-20 h-12 md:w-20 w-12 overflow-hidden object-cover bg-red-700 flex items-center justify-center rounded-full">
                 <Image
-                  src={"/images/LOGO.png"}
+                  src={"/favicon.png"}
                   alt="LOGO"
                   height={70}
                   width={70}
