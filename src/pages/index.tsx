@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 import ScrollAnimate from "@/Component/Hooks/ScrollAnimation"
 
 import { useEffect } from "react";
@@ -162,9 +162,10 @@ export default function Home() {
               {/* END MAX MD */}
 
               <div className={`transition-all duration-1700 transform ${homeInvisible ? 'max-md:scale-100 md:-translate-x-0 opacity-100' : 'max-md:scale-0 md:-translate-x-20 opacity-0'}`}>
-                <a href="https://drive.google.com/file/d/13zxq_ckSLGdhqLV0QXeEiPpqBL1uq4H-/view?usp=sharing" target="_blank" className="">
+                <Link href={"https://drive.google.com/file/d/13zxq_ckSLGdhqLV0QXeEiPpqBL1uq4H-/view?usp=sharing"} target="_blank" rel="noopener noreferrer">
                   <h5 className="py-2.5 font-semibold text-accent">Download CV</h5>
-                </a>
+                </Link>
+
               </div>
             </div>
           </div>
@@ -550,7 +551,7 @@ export default function Home() {
 
 
       {/* FOOTHER */}
-      <section className="md:bg-description bg-transparent">
+      <section id="Contact" className="md:bg-description bg-transparent">
         <footer className={`${container} py-5`}>
           <div className="container md:w-1/2 mx-auto">
 

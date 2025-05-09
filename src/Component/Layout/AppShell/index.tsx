@@ -3,7 +3,7 @@ import Navbar from "../Navbar"
 type AppShellProps = {
     children: React.ReactNode;
 }
-const hiddenNavbar = ["/src/pages/404"];
+const hiddenNavbar = ["/404"];
 
 export default function Index(props: AppShellProps) {
     const { children } = props;
@@ -11,8 +11,8 @@ export default function Index(props: AppShellProps) {
 
     return (
         <div>
-            {hiddenNavbar.includes(pathname) && <Navbar />}
+            {!hiddenNavbar.includes(pathname) && <Navbar />}
             {children}
         </div>
-    )
+    );
 }

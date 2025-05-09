@@ -3,6 +3,23 @@ import Image from 'next/image';
 export default function Index() {
     const [isOpen, setIsOpen] = useState(false);
     const [isScroll, setIsScroll] = useState(false);
+    // const [activeSection, setActiveSection] = useState('');
+
+    // useEffect(() => {
+    //     const handleHashChange = () => {
+    //         setActiveSection(window.location.hash);
+    //     };
+
+    //     // Cek saat pertama render
+    //     handleHashChange();
+
+    //     // Dengarkan perubahan hash
+    //     window.addEventListener('hashchange', handleHashChange);
+
+    //     return () => {
+    //         window.removeEventListener('hashchange', handleHashChange);
+    //     };
+    // }, []);
 
     useEffect(() => {
         const handleScroll = () => {
