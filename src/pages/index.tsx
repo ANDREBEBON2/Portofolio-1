@@ -469,7 +469,7 @@ export default function Home() {
               </div>
               <div className="sertifikat rounded-2xl overflow-hidden">
                 <Image
-                  src={"/images/MYSQl.png"}
+                  src={"/images/MYSQL.png"}
                   alt="sertifikat belajar MYSQL"
                   height={500}
                   width={500}
@@ -515,7 +515,7 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-7 md:grid-cols-2 md:gap-8 py-5 mt-5">
               <div className={`flex justify-center items-center overflow-hidden rounded-md`} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
                 <Image
-                  src={"/images/st.png"}
+                  src={"/images/ST.png"}
                   alt="Paroki Waimarama"
                   height={2800}
                   width={2800}
@@ -535,7 +535,7 @@ export default function Home() {
 
               <div className={`flex justify-center items-center overflow-hidden rounded-md md:col-span-2`} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
                 <Image
-                  src={"/images/jo.png"}
+                  src={"/images/JO.png"}
                   alt="JE Oficial Brand"
                   height={2800}
                   width={2800}
