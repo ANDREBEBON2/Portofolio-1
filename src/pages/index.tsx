@@ -495,7 +495,7 @@ export default function Home() {
                   <div className="MDdeskripsi flex flex-col justify-center items-center bg-description rounded xl:py-10 py-2 xl:px-5 px-2 max-md:hover:scale-110 max-md:hover:bg-primary transition duration-300">
                     <div className="mb-2">
                       <Image
-                        src={"/SVG/Backend.svg"}
+                        src={"/SVG/backend.svg"}
                         alt="design"
                         height={130}
                         width={130}
@@ -577,7 +577,7 @@ export default function Home() {
                 >
                   <div className="mb-2">
                     <Image
-                      src={"/SVG/Backend.svg"}
+                      src={"/SVG/backend.svg"}
                       alt="design"
                       height={100}
                       width={100}
