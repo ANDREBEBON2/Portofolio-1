@@ -727,7 +727,7 @@ export default function Home() {
                 className={`flex justify-center items-center overflow-hidden rounded-md md:col-span-2`}
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                data-aos-delay="150"
+                data-aos-delay="120"
               >
                 <Image
                   src={"/images/JO.png"}
